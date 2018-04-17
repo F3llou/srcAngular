@@ -1,0 +1,80 @@
+<div class="container">
+<div class="row">
+	<div class="col">
+		<h1>Créer un compte Administrateur</h1><br>
+		<section>
+		<form novalidate [formGroup]="agentForm" (ngSubmit)="onSubmit()">
+			<fieldset><legend>Nouvel Administrateur:</legend>
+				<div class="formGroup">
+					<label>login</label>
+					<input type="text"
+					class="form-control"
+					formControlName="login">
+					</div>
+				<div class="formGroup">
+					<label>mdp</label>
+					<input type="password"
+					class="form-control"
+					formControlName="mdp">
+					</div>	
+				<div class="formGroup">
+					<label>nom</label>
+					<input type="text"
+					class="form-control"
+					formControlName="nom">
+					</div>	
+				<div class="formGroup">
+					<label>prenom</label>
+					<input type="text"
+					class="form-control"
+					formControlName="prenom">
+					</div>
+				<div class="formGroup">
+					<label>adresse</label>
+					<input type="text"
+					class="form-control"
+					formControlName="address">
+					</div>
+				<div class="formGroup">
+					<label>email</label>
+					<input type="email"
+					class="form-control"
+					formControlName="email">
+					</div>
+
+				<div class="formGroup">
+					<label>num tel</label>
+					<input type="text"
+					class="form-control"
+					formControlName="numTel">
+					</div>
+				<div class="formGroup">
+					<label>date debut</label>
+					<input type="text"
+					class="form-control"
+					formControlName="dateDeb">
+					</div>	
+					
+               <div class="formGroup">
+					<label>matricul</label>
+					<input type="text"
+					class="form-control"
+					formControlName="matricule">
+					</div>	
+					</fieldset>
+
+			
+			
+	
+			<button type="submit" class="btn btn-primary" 
+			[disabled]="!agentForm.valid">Submit</button>
+			<button type="button" class="btn btn-warning"
+			(click)="redirectAgentPage()">cancel</button>
+			
+</form>	
+</section>
+</div>
+</div>
+</div>
+
+

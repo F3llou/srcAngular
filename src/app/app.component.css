@@ -1,0 +1,33 @@
+body{
+
+  border-collapse: collapse;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 30px black;
+
+}
+[class*="col-"],footer{
+  background-color:   #F5EEF8  ; 
+  border-collapse: collapse;
+  border: 1px solid #DAE8E8;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+}
+
+label {
+ margin-top:10px;
+ display:block;
+ width:50%;
+ }
+ .formGroup{
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+ }

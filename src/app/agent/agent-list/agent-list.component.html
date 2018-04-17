@@ -1,0 +1,57 @@
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<section>
+				<header class="header">
+					<div class="row">
+						<div class=col-md-4>
+							<h1>liste des agents</h1>
+						</div>
+						<div class="clol-md-6">
+						</div>
+						<div class="clol-md-2">
+							<button type="button" class="btn btn-primary" 
+							(click)="redirectNewAgentPage()">New agent</button>
+						</div>
+					</div>
+				</header>
+			</section>
+
+			<section class="main">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>login</th>
+							<th>mdp</th>
+							<th>nom</th>
+							<th>prenom</th>
+							<th>adresse</th>
+							<th>email</th>
+							<th>num tel</th>
+							<th>date debut</th>
+							<th>matricule</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let agent of agents">
+							<th scope="row">{{agent.id}}</th>
+							<td>{{agent.login}}</td>
+							<td>{{agent.mdp}}</td>
+							<td>{{agent.nom}}</td>
+							<td>{{agent.prenom}}</td>
+							<td>{{agent.address}}</td>
+							<td>{{agent.email}}</td>
+							<td>{{agent.numtel}}</td>
+							<td>{{agent.dateDeb}}</td>
+							<td>{{agent.matricule}}</td>
+							<td>
+								<button type="button" class="btn btn-success" (click)="editAgentPage(agent)">Edit</button>
+								<button type="button" class="btn btn-danger" (click)="deleteAgent(agent)">delete</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</div>
+	</div></div>

@@ -1,0 +1,46 @@
+<head>
+	<meta charset="ISO-8859-15">
+	<title>Login tablette</title>
+	<!-- 	<link href="~bootstrap/dist/css/bootstrap.css" rel="stylesheet"> -->	
+	<link rel="stylesheet" type="text/css" href="../../../assets/styles/stylesCSS.css" />
+	<script type="text/typescript" src="../service/login.service.ts"></script>
+</head>
+<body>
+	<header class="row">
+		<div class="col-sm-12">
+			<img alt="banque" id="imgBank" src="../assets/images/banque.jpg"><br />
+			<h1>Bienvenue sur Gestibank</h1>
+			<hr />
+		</div>
+	</header>
+	
+
+
+<nav>
+	
+	
+  <a routerLink="/user" routerLinkActive="active"> Liste des ulilisateur</a>&nbsp;&nbsp;
+  <a routerLink="/user/create" routerLinkActive="active"> Ajout ulilisateur</a>&nbsp;
+
+
+  <a routerLink="/agent" routerLinkActive="active"> Liste des Agent</a>&nbsp;&nbsp;
+  <a routerLink="/agent/create" routerLinkActive="active"> Ajout Agent</a>&nbsp;
+
+  <a routerLink="/client" routerLinkActive="active"> Liste des Client</a>&nbsp;&nbsp;
+  <a routerLink="/client/create" routerLinkActive="active"> Ajout Client</a>&nbsp;
+
+  <a routerLink="/login" routerLinkActive="active"> Authentification</a>&nbsp;&nbsp;
+  <a routerLink="/compte" routerLinkActive="active"> Liste des Comptes</a>&nbsp;&nbsp;
+</nav>
+
+<router-outlet></router-outlet>
+<footer class="row">
+	<div class="col-sm-12">
+		<hr />
+	</div>
+</footer>
+</body>
+
+
+
+

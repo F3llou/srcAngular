@@ -1,0 +1,106 @@
+@CHARSET "ISO-8859-1";
+.boite {-webkit-border-radius:5px;}
+
+body{background: white; color: black; font-size:100%}
+@media only screen and (max-device-width:980px) {
+	body {
+	font-size:120%}
+}
+
+p{font: 10pt Courier; text-indent: 0.5in;}
+a{text-decoration: none; color: blue;}
+
+#info {background-color: yellow;}
+#inscript {background-color: yellow;}
+#pret {background-color: yellow;}
+
+#infoBloc {
+	border: solid 10px black;
+	margin: 50px;
+	padding: 30px;
+	background-color: lightgrey;}
+#inscriptBloc {
+	border: solid 10px black;
+	margin: 50px;
+	padding: 30px;
+	background-color: lightblue;
+}
+#pretBloc {
+	border: solid 10px black;
+	margin: 50px;
+	padding: 30px;
+	background-color: red;
+}
+
+#headerText {
+	font: 40pt Courier bold;
+	font-weight: bold;
+}
+
+#titreAcces {
+	font: 30pt Courier bold;
+	font-weight: bold;
+}
+
+#titreCatalogue {
+	font: 30pt Courier bold;
+	font-weight: bold;
+}
+
+#titreChoixSupport {
+	font: 20pt Courier bold;
+	font-weight: bold;
+}
+
+#imgBank {
+	float:right;
+	height:100px;
+}
+
+
+
+label {
+	display: inline-block;
+	width: 150px;
+	line-height: 30px;
+}
+
+
+.connexion {
+	width: 30%;
+	max-width: 200px;
+	color:black;
+    background:grey; 
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+.soumissionCatalogue {
+	width: 30%;
+	max-width: 200px;
+	color:black;
+    background:grey; 
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#Acces {
+	width: 100%;
+	font-family: Arial;
+	background-color: lightgrey;
+}
+
+#Catalogue {
+	position:relative;
+	font-family: Arial;
+	background-color: lightgrey;
+}
+
+#footerText {
+	font: 15pt Courier bold;
+	color: grey;
+	font-style: oblique;
+	/*background-image: url("../images/blue.jpg");*/
+}

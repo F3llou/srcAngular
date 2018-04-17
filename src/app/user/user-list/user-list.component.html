@@ -1,0 +1,59 @@
+
+<div class="container">
+<div class="row">
+	<div class="col">
+		<section>
+			<header class="header">
+				<div class="row">
+					<div class=col-md-4>
+						<h1>liste des utilisateurs</h1>
+					</div>
+					<div class="clol-md-6">
+					</div>
+					<div class="clol-md-2">
+						<button type="button" class="btn btn-primary" 
+						(click)="redirectNewUserPage()">New user</button>
+					</div>
+				</div>
+			</header>
+		</section>
+
+<section class="main">
+<div class="formcontainer">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>login</th>
+				<th>mdp</th>
+				<th>nom</th>
+				<th>prenom</th>
+				<th>adresse</th>
+				<th>email</th>
+				<th>num tel</th>
+				<th>date debut</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr *ngFor="let user of users">
+			<th scope="row">{{user.id}}</th>
+			<td>{{user.login}}</td>
+			<td>{{user.mdp}}</td>
+			<td>{{user.nom}}</td>
+		    <td>{{user.prenom}}</td>
+		    <td>{{user.address}}</td>
+		    <td>{{user.email}}</td>
+		    <td>{{user.numtel}}</td>
+		    <td>{{user.dateDeb}}</td>
+		<td>
+			<button type="button" class="btn btn-success" (click)="editUserPage(user)">Edit</button>
+				<button type="button" class="btn btn-danger" (click)="deleteUser(user)">delete</button>
+		</td>
+	</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+</div>
+</div></div>

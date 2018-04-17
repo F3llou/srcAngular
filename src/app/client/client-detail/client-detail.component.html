@@ -1,0 +1,86 @@
+<div class="container">
+<div class="row">
+	<div class="col">
+		<h1>Espace d'inscription</h1>
+		<section>
+		<form novalidate [formGroup]="clientForm" (ngSubmit)="onSubmit()">
+			<fieldset><legend>Nouveau Client:</legend>
+				<div class="formGroup">
+					<label>login</label>
+					<input type="text"
+					class="form-control"
+					formControlName="login">
+					</div>
+				<div class="formGroup">
+					<label>mdp</label>
+					<input type="password"
+					class="form-control"
+					formControlName="mdp">
+					</div>	
+				<div class="formGroup">
+					<label>nom</label>
+					<input type="text"
+					class="form-control"
+					formControlName="nom">
+					</div>	
+				<div class="formGroup">
+					<label>prenom</label>
+					<input type="text"
+					class="form-control"
+					formControlName="prenom">
+					</div>
+				<div class="formGroup">
+					<label>adresse</label>
+					<input type="text"
+					class="form-control"
+					formControlName="address">
+					</div>
+				<div class="formGroup">
+					<label>email</label>
+					<input type="email"
+					class="form-control"
+					formControlName="email">
+					</div>
+
+				<div class="formGroup">
+					<label>num tel</label>
+					<input type="text"
+					class="form-control"
+					formControlName="numTel">
+					</div>
+				<div class="formGroup">
+					<label>situationMaritale</label>
+					<input type="text"
+					class="form-control"
+					formControlName="situationMaritale">
+					</div>
+				<div class="formGroup">
+					<label>nombre Enfant</label>
+					<input type="text"
+					class="form-control"
+					formControlName="nbEnfant">
+					</div>
+				<div class="formGroup">
+					<label>date deb</label>
+					<input type="text"
+					class="form-control"
+					formControlName="dateDeb">
+					</div>	
+					</fieldset>
+
+			
+			
+	
+			<button type="submit" class="btn btn-primary" 
+			[disabled]="!clientForm.valid">Submit</button>
+			<button type="button" class="btn btn-warning"
+			(click)="redirectclientPage()">cancel</button>
+			<!-- <pre>{{clientForm.value| json}}</pre> -->
+		
+</form>	
+</section>
+</div>
+</div>
+</div>
+
+
